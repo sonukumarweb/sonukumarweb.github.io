@@ -1,115 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sonu Kumar - Profile</title>
-    <meta name="description" content="Sonu Kumar - E-commerce Executive, Web Developer, Web Designer. View my profile and contact information.">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        body {
-            background: #f0f2f5;
-            color: #333;
-        }
-        header {
-            background: #4e54c8;
-            color: white;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 4px solid white;
-            margin-bottom: 20px;
-        }
-        header h1 {
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 18px;
-        }
-        main {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        section {
-            margin-bottom: 50px;
-        }
-        section h2 {
-            color: #4e54c8;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #4e54c8;
-            display: inline-block;
-            padding-bottom: 5px;
-        }
-        .skills span {
-            display: inline-block;
-            background: #8f94fb;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            margin: 5px;
-            font-weight: bold;
-            transition: transform 0.3s;
-        }
-        .skills span:hover {
-            transform: scale(1.1);
-        }
-        .contact p, .contact a {
-            font-size: 16px;
-            margin: 5px 0;
-        }
-        .contact a {
-            color: #4e54c8;
-            text-decoration: none;
-        }
-        .contact a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #333;
-            color: white;
-        }
-        @media (max-width: 600px) {
-            header img {
-                width: 120px;
-                height: 120px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonu Kumar - Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f7fa;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    nav {
+      background: #222;
+      padding: 10px 0;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00f2fe;
+    }
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    /* About section */
+    .about-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .about-container img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #4facfe;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .skills-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 20px;
+    }
+    .skills-list li {
+      background: white;
+      margin: 10px auto;
+      padding: 10px 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 250px;
+      font-weight: bold;
+      transition: transform 0.3s;
+    }
+    .skills-list li:hover {
+      transform: scale(1.05);
+    }
+    /* Services */
+    .services {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 250px;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    footer {
+      background: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
-    <header>
-        <img src="profile.jpg" alt="Sonu Kumar">
-        <h1>Sonu Kumar</h1>
-        <p>E-commerce Executive | Web Developer | Web Designer</p>
-    </header>
+  <header>
+    <h1>Sonu Kumar</h1>
+    <p>Welcome to my personal website!</p>
+  </header>
 
-    <main>
-        <section class="about">
-            <h2>About Me</h2>
-            <p>Hello! I am Sonu Kumar. I love learning AI, coding, and creating websites. I also want to build my own profile website so people can see my work online.</p>
-        </section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-        <section class="skills">
-            <h2>Skills / Roles</h2>
-            <span><SR-></SR->E-commerce Executive</span>
-            <span>Web Developer</span>
-            <span>Web Designer</span>
-        </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <!-- Yaha apni image ka naam sonu.png rakho -->
+      <img src="sonu.png" alt="Sonu Kumar Photo">
+      <p>Hello! I'm Sonu Kumar. This is my first professional website.  
+         I am learning web design and development 🚀</p>
 
-        <section class="contact">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:sonukumar49881@gmail.com">sonukumar49881@gmail.com</a></p>
-            <p>Location: Sector 22, Gurgaon, Haryana</p
+      <h3>My Skills</h3>
+      <ul class="skills-list">
+        <li>Skill</li>
+        <li>E-Commerce Executive</li>
+        <li>Web Developer</li>
+        <li>Web Designer</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>My Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Web Design</h3>
+        <p>Modern and responsive website design.</p>
+      </div>
+      <div class="card">
+        <h3>Development</h3>
+        <p>Clean and professional coding solutions.</p>
+      </div>
+      <div class="card">
+        <h3>Support</h3>
+        <p>Helping in website setup and hosting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:sonukumar49881@gmail.com">sonukumar49881@gmail.com</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sonu Kumar | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
